@@ -32,6 +32,10 @@ body {
   }
 } */
 
+.body {
+  font-size: 16px;
+}
+
 .glassmorphism {
-  @apply bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30;
+  @apply bg-gray-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50;
 }

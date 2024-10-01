@@ -7,7 +7,7 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ color }) => {
   return (
-    <div className={clsx(color, "font-extrabold text-xl tracking-wide")}>
+    <div className={clsx(color, "font-extrabold text-lg tracking-wide")}>
       GAME LAND
     </div>
   );

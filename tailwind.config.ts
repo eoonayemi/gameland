@@ -16,6 +16,10 @@ const config: Config = {
       colors: {
         primary: "#12D0C5",
         secondary: "#18D67B",
+        tertiary: "#2E46C1",
+      },
+      boxShadow: {
+        "hero-img": "2px 2px 10px #18D67B, -4px -4px 10px #2E46C1",
       },
     },
   },
