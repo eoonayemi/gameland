@@ -21,7 +21,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
       <CustomButton
         tagName="Sign up"
         onClick={handleSignUp}
-        styles="sm:w-80 mx-10 mt-5 border border-t-secondary border-b-primary border-r-primary border-l-secondary bg-gradient-to-b from-secondary to-primary bg-clip-text text-transparent hover:bg-gradient-to-b hover:from-secondary hover:to-primary hover:bg-clip-border hover:text-black"
+        styles="sm:w-80 mx-5 mt-5 border border-t-secondary border-b-primary border-r-primary border-l-secondary bg-gradient-to-b from-secondary to-primary bg-clip-text text-transparent hover:bg-gradient-to-b hover:from-secondary hover:to-primary hover:bg-clip-border hover:text-black"
       />
     </nav>
   );

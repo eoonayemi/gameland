@@ -17,7 +17,7 @@ const DropdownLink: React.FC<DropdownLinkProps> = ({
 }) => {
   return isMobile ? (
     <div
-      className={`flex items-center justify-between text-white hover:text-primary px-10 py-4 hover:bg-gray-800
+      className={`flex items-center justify-between text-white hover:text-primary px-5 py-4 hover:bg-gray-800
       `}
       onClick={() => {
         if (onClick) {
