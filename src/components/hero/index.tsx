@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     <section
       className={clsx("bg-[url('/images/hero-bg-img.webp')] bg-contain")}
     >
-      <div className="bg-gradient-to-b from-[#000505]/70 via-[#000505]/75 to-[#010704]/95 xl:px-28 px-5 w-full h-full pb-10 sm:pb-20 md:pb-32 pt-40 md:pt-48 text-white flex flex-col items-center justify-center gap-10">
+      <div className="bg-gradient-to-b from-[#000505]/70 via-[#000505]/75 to-[#010704]/95 xl:px-28 sm:px-10 px-5 w-full h-full pb-10 sm:pb-20 md:pb-32 pt-40 md:pt-48 text-white flex flex-col items-center justify-center gap-10">
         <h1
           className={`${squareBold.className} tracking-wider lg:leading-[4.5rem] leading-[3.5rem] text-[3rem] lg:text-6xl text-center font-extrabold uppercase`}
         >
