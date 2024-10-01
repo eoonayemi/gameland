@@ -4,7 +4,7 @@ import { features } from "@/constants";
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-[#161616] xl:px-28 px-10 py-14 sm:py-10 md:py-20 text-white flex flex-col justify-center gap-10 md:gap-20">
+    <section className="bg-[#161616] xl:px-28 px-5 py-14 sm:py-10 md:py-20 text-white flex flex-col justify-center gap-10 md:gap-20">
       <h2 className="text-primary text-center text-2xl md:text-[1.7rem] font-bold">
         Features
       </h2>

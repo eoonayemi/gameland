@@ -3,7 +3,7 @@ import { SectionCard } from "../shared";
 
 const BattleSection = () => {
   return (
-    <section className="bg-[#161616] xl:px-28 px-10 py-14 sm:py-10 md:py-20 text-white flex flex-col justify-center gap-10 md:gap-20">
+    <section className="bg-[#161616] xl:px-28 px-5 py-14 sm:py-10 md:py-20 text-white flex flex-col justify-center gap-10 md:gap-20">
       <SectionCard
         title="Battle"
         subtitle="Fight and Find Rare Creatures with Robot"

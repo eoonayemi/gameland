@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   const [mobileNavIsOpen, setMobileNavIsOpen] = useState(false);
   const handleSignUp = () => {};
   return (
-    <header className="flex justify-between items-center bg-[#022422] {bg-transparent} glassmorphism fixed inset-x-0 top-0 text-white xl:px-28 px-10 py-5 h-20 z-40">
+    <header className="flex justify-between items-center bg-[#022422] {bg-transparent} glassmorphism fixed inset-x-0 top-0 text-white xl:px-28 px-5 py-5 h-20 z-40">
       <Logo color="text-[#12D0C5]" />
       <Nav />
       <CustomButton
