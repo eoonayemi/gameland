@@ -4,19 +4,32 @@ export * from "./hero-imgs";
 export const baseConceptInfo = [
   {
     title: "Active Users",
-    value: "1M",
+    from: 0,
+    to: 1000000,
+    isFixed: true,
+    duration: 3,
   },
   {
     title: "Already Earned",
-    value: "$115M",
+    from: 0,
+    to: 115000000,
+    prefix: "$",
+    isFixed: true,
+    duration: 10,
   },
   {
     title: "AVG Rating",
-    value: "4.8",
+    from: 0,
+    to: 4.8,
+    duration: 3,
   },
   {
     title: "Collections",
-    value: "200+",
+    from: 0,
+    to: 200,
+    suffix: "+",
+    isFixed: true,
+    duration: 3,
   },
 ];
 

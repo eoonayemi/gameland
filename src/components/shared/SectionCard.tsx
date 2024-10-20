@@ -1,7 +1,10 @@
+"use client";
+
 import clsx from "clsx";
 import React from "react";
 import CustomButton from "./CustomButton";
 import Image from "next/image";
+import * as motion from "framer-motion/client";
 
 interface SectionCardProps {
   title?: string;
@@ -30,14 +33,32 @@ const SectionCard: React.FC<SectionCardProps> = ({
   titleStyles,
   isArrowBtn,
 }) => {
+  const animateVariants = {
+    initial: (isOnRight: boolean) => ({
+      opacity: 0,
+      x: isOnRight ? 100 : -100,
+    }),
+    onView: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, delay: 0.3 },
+    },
+  };
+
   return (
-    <div
+    <motion.div
       className={clsx(
         cardStyles,
-        "flex flex-col md:flex-row gap-4 md:gap-32 justify-center items-center"
+        "flex flex-col md:flex-row gap-10 md:gap-32 justify-center items-center overflow-x-hidden"
       )}
     >
-      <div className="flex justify-center">
+      <motion.div
+        className="flex justify-center"
+        custom={false}
+        variants={animateVariants}
+        initial="initial"
+        whileInView="onView"
+      >
         <Image
           src={cardImg}
           alt={cardImgAlt}
@@ -45,8 +66,14 @@ const SectionCard: React.FC<SectionCardProps> = ({
           height={500}
           className={clsx(imgStyles)}
         />
-      </div>
-      <div className="flex flex-col gap-8">
+      </motion.div>
+      <motion.div
+        className="flex flex-col gap-8"
+        custom={true}
+        variants={animateVariants}
+        initial="initial"
+        whileInView="onView"
+      >
         {title && (
           <h3 className="text-primary text-2xl md:text-[1.7rem] font-bold">
             {title}
@@ -71,8 +98,8 @@ const SectionCard: React.FC<SectionCardProps> = ({
           }`}
           isArrowBtn={isArrowBtn}
         />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

@@ -3,7 +3,7 @@ import { ContactCard, InputWithBtn } from "../shared";
 
 const ContactAndOthersSection = () => {
   return (
-    <section className="bg-[#161616] xl:px-28 sm:px-10 px-5 py-14 sm:py-10 md:py-20 text-white flex md:grid md:grid-cols-2 flex-col justify-center gap-10 md:flex-row overflow-hidden">
+    <section className="bg-[#161616] overflow-x-hidden xl:px-28 sm:px-10 px-5 py-14 sm:py-10 md:py-20 text-white flex md:grid md:grid-cols-2 flex-col justify-center gap-10 md:flex-row overflow-hidden">
       <ContactCard
         title="GAME LAND"
         titleStyles="text-primary font-extrabold"

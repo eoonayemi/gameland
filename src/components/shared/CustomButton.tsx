@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import React from "react";
 import { ArrowRight } from "../icons";
+import { motion } from "framer-motion";
 
 interface CustomButtonProps {
   tagName: string;
@@ -10,6 +11,8 @@ interface CustomButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   isArrowBtn?: boolean;
+  isAnimated?: boolean;
+  animationProps?: any;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
@@ -18,9 +21,15 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   onClick,
   disabled,
   isArrowBtn,
+  animationProps,
 }) => {
   return isArrowBtn ? (
-    <div className={clsx("text-[15px] font-bold flex items-center gap-3")}>
+    <motion.div
+      className={clsx(
+        "text-[15px] font-bold flex items-center gap-3 w-fit cursor-pointer select-none"
+      )}
+      whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+    >
       <span>{tagName}</span>
       <button
         className={clsx(
@@ -32,15 +41,17 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       >
         <ArrowRight className="inline" />
       </button>
-    </div>
+    </motion.div>
   ) : (
-    <button
+    <motion.button
       className={clsx(styles, "px-8 py-2 rounded-md text-[15px] font-bold")}
       disabled={disabled}
       onClick={onClick}
+      {...animationProps}
+      whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
     >
       {tagName}
-    </button>
+    </motion.button>
   );
 };
 
