@@ -64,13 +64,13 @@ const Hero: React.FC = () => {
 
         <motion.div
           className="flex flex-row gap-12 sm:gap-16 md:gap-20 lg:gap-32 overflow-hidden w-full justify-center items-center pt-[2rem] pb-[4rem] md:pb-[4.5rem] lg:pb-[6rem] px-[1.5rem] lg:px-[10rem] md:px-[3.5rem] sm:px-[3rem] lg:mt-10"
-          initial={{ opacity: 0, scale: 0.2, rotate: 360, y: -200 }}
+          initial={{ opacity: 0, scale: 0, rotate: 360, y: -200 }}
           whileInView={{
             opacity: 1,
             scale: 1,
             rotate: 0,
             y: 0,
-            transition: { duration: 0.2, delay: 0.7 },
+            transition: { duration: 0.2, delay: 0.5 },
           }}
         >
           <HeroImgCard

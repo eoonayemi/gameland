@@ -9,14 +9,14 @@ const FeaturesSection = () => {
       <motion.h2
         className="text-primary text-center text-2xl md:text-[1.7rem] font-bold"
         initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.6 } }}
+        whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.5} }}
       >
         Features
       </motion.h2>
       <motion.h1
         className="text-white text-center text-4xl md:text-[2.5rem] leading-[3rem] font-bold"
         initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.6 } }}
+        whileInView={{ opacity: 1, scale: 1, transition: { duration: 0.5 } }}
       >
         Play to Earn
       </motion.h1>
@@ -26,7 +26,7 @@ const FeaturesSection = () => {
         whileInView={{
           opacity: 1,
           y: 0,
-          transition: { duration: 0.6, delay: 0.5 },
+          transition: { duration: 0.5, delay: 0.2 },
         }}
       >
         Explore more than 200 magical artifacts and embark on thrilling hunts

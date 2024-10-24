@@ -26,7 +26,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { duration: 1, delay: 0.5 },
+        transition: { duration: 1, delay: 0.1 },
       }}
       className={clsx(boxStyles, "overflow-hidden flex-1")}
     >

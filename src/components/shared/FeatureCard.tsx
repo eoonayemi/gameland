@@ -26,8 +26,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           type: "spring",
           duration: 0.5,
           // delay: 0.8,
-          stiffness: 100,
-          damping: 15,
+          stiffness: 120,
+          damping: 20,
         },
       }}
     >

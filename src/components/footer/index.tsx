@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         whileInView={{
           opacity: 1,
           y: 0,
-          transition: { duration: 0.5 },
+          transition: { duration: 0.2 },
         }}
       >
         Copyright@2024Gameland. All Rights Reserved
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           whileInView: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.5 },
+            transition: { duration: 0.2 },
           },
         }}
       />
